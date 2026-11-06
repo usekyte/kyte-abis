@@ -1,0 +1,33 @@
+{
+  "name": "kyte-abis",
+  "version": "1.0.0",
+  "description": "ABIs, addresses and types for the Kyte options market on Robinhood Chain",
+  "license": "MIT",
+  "type": "module",
+  "main": "./index.mjs",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.mjs"
+    },
+    "./addresses.json": "./addresses.json",
+    "./abis/*": "./abis/*"
+  },
+  "files": [
+    "abis",
+    "addresses.json",
+    "index.mjs",
+    "index.d.ts"
+  ],
+  "peerDependencies": {
+    "viem": ">=2"
+  },
+  "peerDependenciesMeta": {
+    "viem": {
+      "optional": true
+    }
+  },
+  "repository": "github:usekyte/kyte-abis",
+  "homepage": "https://kyte.sh"
+}
